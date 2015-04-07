@@ -19,7 +19,14 @@ obj-$(CONFIG_IOSCHED_NOOP)	+= noop-iosched.o
 obj-$(CONFIG_IOSCHED_DEADLINE)	+= deadline-iosched.o
 obj-$(CONFIG_IOSCHED_CFQ)	+= cfq-iosched.o
 obj-$(CONFIG_IOSCHED_ANXIETY)	+= anxiety-iosched.o
+<<<<<<< HEAD
 obj-$(CONFIG_IOSCHED_TEST)	+= test-iosched.o
+=======
+obj-$(CONFIG_IOSCHED_MAPLE)     += maple-iosched.o
+obj-$(CONFIG_IOSCHED_BFQ)	+= bfq-iosched.o
+obj-$(CONFIG_IOSCHED_TEST)	+= test-iosched.o
+obj-$(CONFIG_IOSCHED_TRIPNDROID) += tripndroid-iosched.o
+>>>>>>> 6198c452055e... block: cgroups, kconfig, build bits for BFQ-v7r11-4.4.0
 
 obj-$(CONFIG_BLOCK_COMPAT)	+= compat_ioctl.o
 obj-$(CONFIG_BLK_CMDLINE_PARSER)	+= cmdline-parser.o
